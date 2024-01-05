@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <title>Darkskullz9's Website</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width", initial-scale="1.0">
+    </head>
+
+    <body>
+        <main>
+            <header></header>
+            <div></div>
+            <footer>
+                <p>Auteur : Steven Prauca</p>
+                <p><a href="mailto:praucasteven@gmail.com">praucasteven@gmail.com</a></p>
+            </footer>
+        </main>
+    </body>
+
+</html>
