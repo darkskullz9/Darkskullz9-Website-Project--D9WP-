@@ -1,10 +1,8 @@
-body {
-    background-color: #1e1e1e;
-}
+@font-face {font-family: "Jacksilver"; src: url("https://db.onlinewebfonts.com/t/6af43f92e90ba331700cd679780ffeab.svg#Jacksilver")format("svg");}
 
-header, footer {
+footer {
     background-color: #ffffff;
-    height: 80px;
+    height: fit-content;
     max-width: 1440px;
 }
 
