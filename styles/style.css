@@ -54,7 +54,7 @@ body {
         align-items: center;
     }
 
-    .navigation-bar{
+    .nav-container{
         box-sizing: border-box;
         position: sticky;
         width: 100%;
@@ -66,11 +66,11 @@ body {
         transition: background-color 600ms ease-in-out;
     }
 
-    .navigation-bar.transparent{
+    .nav-container.transparent{
         background-color: transparent;
     }
 
-    .navigation-bar.dark{
+    .nav-container.dark{
         background-color: #121212;
     }
 
