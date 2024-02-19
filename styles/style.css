@@ -1,16 +1,262 @@
-@font-face {font-family: "Jacksilver"; src: url("https://db.onlinewebfonts.com/t/6af43f92e90ba331700cd679780ffeab.svg#Jacksilver")format("svg");}
-
-footer {
-    background-color: #ffffff;
-    height: fit-content;
-    max-width: 1440px;
+@font-face {
+    font-family: 'Mona-Sans SemiBold Narrow Italic';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Mona-Sans SemiBold Narrow Italic'), url('fonts/mona-sans-webfont/Mona-Sans-SemiBoldNarrowItalic.woff') format('woff');
 }
 
-nav a {
-    color: #000000;
-    text-decoration: none;
+@font-face {
+    font-family: 'Mona-Sans Bold Narrow Italic';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Mona-Sans Bold Narrow Italic'), url('fonts/mona-sans-webfont/Mona-Sans-BoldNarrowItalic.woff') format('woff');
 }
 
-footer a {
-    color: #000000;
+@font-face {
+    font-family: 'Mona-Sans Black Narrow Italic';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Mona-Sans Black Narrow Italic'), url('fonts/mona-sans-webfont/Mona-Sans-BlackNarrowItalic.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Jacksilver';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Jacksilver'), url('fonts/jacksilver-font/jacksilver.ttf');
+}
+
+/* 
+  ##Device = Desktops
+  ##Screen = 1281px to higher resolution desktops
+*/
+
+:root {
+    --header-height: fit-content;
+}
+
+body {
+    height: 100%;
+    margin: 0;
+    font-family: 'Mona-Sans SemiBold Narrow Italic', Verdana, Tahoma, sans-serif;
+}
+
+
+
+@media (min-width: 1281px) {
+    .home {
+        display: flex;
+        flex-direction: column;
+        flex-grow: 0;
+        background-color: #ffffff;
+        align-content: center;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    .navigation-bar{
+        box-sizing: border-box;
+        position: sticky;
+        width: 100%;
+        height: var(--header-height);
+        margin: 0;
+        padding: 32px;
+        top: 0;
+        z-index: 1;
+        transition: background-color 600ms ease-in-out;
+    }
+
+    .navigation-bar.transparent{
+        background-color: transparent;
+    }
+
+    .navigation-bar.dark{
+        background-color: #121212;
+    }
+
+    .navigation {
+        width: auto;
+        height: var(--header-height);
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0;
+    }
+
+    .links-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+        padding: 0;
+        gap: 12px;
+    }
+
+    .nav-link {
+        font-family: 'Jacksilver';
+        font-size: 2em;
+        text-align: left;
+    }
+
+    .nav-link-frame {
+        width: 125px;
+        height: 56px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0;
+        text-transform: capitalize;
+    }
+
+    .contact-button {
+        width: 224px;
+        height: auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 8px;
+        padding: 16px 24px;
+        background-color: #121212;
+        border: 0;
+    }
+
+    .contact-button-text {
+        font-family: 'Mona-Sans Black Narrow Italic';
+        font-size: 2em;
+        letter-spacing: 0.96px;
+        text-align: center;
+        text-transform: uppercase;
+        color: #ffffff;
+    }
+
+    #section-1 {
+        display: flex;
+        align-content: center;
+        position: relative;
+        width: 100%;
+        padding-top: var(--header-height);
+        margin-top: calc(-1*var(--header-height));
+        justify-content: center;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .hero-content {
+        width: 1650px;
+        height: 767px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 270px;
+        margin: 0 64px;
+        padding: 0;
+        align-content: center;
+    }
+
+    .container {
+        height: 513px;
+        flex-grow: 1;
+        display: flex;
+        justify-content: center;
+        gap: 32px;
+        padding: 0;
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    .my-heading {
+        height: auto;
+        align-self: stretch;
+        flex-grow: 0;
+        font-family: 'Jacksilver';
+        font-size: 6em;
+        text-align: left;
+        color: #121212;
+    }
+
+    .text-1 {
+        height: auto;
+        align-self: stretch;
+        flex-grow: 0;
+        font-family: 'Mona-Sans Bold Narrow Italic';
+        text-transform: uppercase;
+        font-size: 2em;
+        font-weight: 600;
+        font-stretch: normal;
+        line-height: 1.25;
+        letter-spacing: 0.96px;
+        text-align: left;
+        color: #121212;
+    }
+
+    .text-style-1, .text-style-2 {
+        color: #6050dc;
+    }
+
+    .image {
+        width: 620px;
+        height: 767px;
+        align-self: stretch;
+        flex-grow: 0;
+        border-radius: 15px;
+        object-fit: cover;
+    }
+}
+  
+  /* 
+    ##Device = Laptops, Desktops
+    ##Screen = B/w 1025px to 1280px
+  */
+  
+@media (min-width: 1025px) and (max-width: 1280px) {
+    
+    /* CSS */
+    
+}
+  
+  /* 
+    ##Device = Tablets, Ipads (portrait)
+    ##Screen = B/w 768px to 1024px
+  */
+  
+@media (min-width: 768px) and (max-width: 1024px) {
+    
+    /* CSS */
+    
+}
+  
+  /* 
+    ##Device = Tablets, Ipads (landscape)
+    ##Screen = B/w 768px to 1024px
+  */
+  
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+    
+    /* CSS */
+    
+}
+  
+  /* 
+    ##Device = Low Resolution Tablets, Mobiles (Landscape)
+    ##Screen = B/w 481px to 767px
+  */
+  
+@media (min-width: 481px) and (max-width: 767px) {
+    
+    /* CSS */
+    
+}
+  
+  /* 
+    ##Device = Most of the Smartphones Mobiles (Portrait)
+    ##Screen = B/w 320px to 479px
+  */
+  
+@media (min-width: 320px) and (max-width: 480px) {
+    
+    /* CSS */
+    
 }
