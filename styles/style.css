@@ -148,23 +148,23 @@ body {
         height: 767px;
         display: flex;
         flex-direction: row;
-        justify-content: center;
+        justify-content: flex-start;
         align-items: center;
-        gap: 270px;
+        gap: 104px;
         margin: 0 64px;
         padding: 0;
-        align-content: center;
     }
 
     .container {
-        height: 513px;
+        height: auto;
+        align-self: stretch;
         flex-grow: 1;
         display: flex;
+        flex-direction: column;
         justify-content: center;
+        align-items: flex-start;
         gap: 32px;
         padding: 0;
-        align-items: flex-start;
-        flex-direction: column;
     }
 
     .my-heading {
@@ -172,7 +172,7 @@ body {
         align-self: stretch;
         flex-grow: 0;
         font-family: 'Jacksilver';
-        font-size: 6em;
+        font-size: 5.375em;
         text-align: left;
         color: #121212;
     }
@@ -181,7 +181,7 @@ body {
         height: auto;
         align-self: stretch;
         flex-grow: 0;
-        font-family: 'Mona-Sans Bold Narrow Italic';
+        font-family: 'Mona-Sans SemiBold Narrow Italic';
         text-transform: uppercase;
         font-size: 2em;
         font-weight: 600;
@@ -197,7 +197,7 @@ body {
     }
 
     .image {
-        width: 620px;
+        width: 520px;
         height: 767px;
         align-self: stretch;
         flex-grow: 0;
